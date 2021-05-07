@@ -1,0 +1,49 @@
+html, body {
+    font-family: 'Crimson Text', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-ai-c {
+    align-items: center;
+}
+
+.flex-ai-fs {
+    align-items: flex-start;
+}
+
+.flex-ai-fe {
+    align-items: flex-end;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.flex-jc-sa {
+    justify-content: space-around;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-jc-se {
+    justify-content: space-evenly;
+}
+
+.flex-jc-fs {
+    justify-content: flex-start;
+}
+
+.flex-jc-fe {
+    justify-content: flex-end;
+}
+

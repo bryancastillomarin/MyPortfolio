@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+}
+
+.header__container {
+    height: 75px;
+}
+
+.logo {
+    flex-basis: 15%;
+}
+
+.logo__img {
+    display: block;
+    width: 100%;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.languages {
+    flex-basis: 15%;
+    max-width: 150px;
+}
+
+.language:hover {
+    text-decoration: underline;
+}
+
