@@ -1,3 +1,5 @@
+// ---------- HEADER ---------- //
+
 .header {
     width: 100%;
 }
@@ -26,3 +28,107 @@
     text-decoration: underline;
 }
 
+// ---------- MAIN ---------- //}
+
+.main__container {
+    margin: 20px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.title {
+    font-size: 2rem; // <--------- convertir a variable
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+// ---------- ABOUTME ---------- //
+
+.aboutme__photo {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.aboutme__photo-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 380px;
+    object-fit: cover;
+}
+
+.aboutme__description-text {
+    text-align: justify;
+    font-size: 1.125rem; // <--------- convertir a variable
+}
+
+// ---------- MY PROJECTS ---------- //
+
+.project {
+    margin: 20px 20px;
+    flex-basis: 100%; // small view
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project__image::before {
+    text-align: center;
+    font-size: 1.125rem; // <------- convertir a variable
+    color: white;
+
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f002 Visit";
+    font-weight: 900;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    transition: all 300ms;
+}
+
+.project__image:hover::before {
+    top: 90%;
+}
+
+.project__image-img {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+}
+
+.project__description {
+    background-color: #DDD; // <--------- convertir a variable
+    min-height: 100px;
+}
+
+.project__description-text {
+    font-size: 1.125rem; // <--------- convertir a variable
+    text-align: center;
+}
+
+.project__technologies {
+    background-color: #DDD; // <--------- convertir a variable
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.technology {
+    flex-basis: 33.33%;
+    text-align: center;
+    line-height: 45px;
+}
+
+.technology:not(:last-child) {
+    border-right: 1px solid #CCC; // <--------- convertir a variable
+}
