@@ -3,6 +3,7 @@
     height: 75px;
     padding-top: 10px;
     background-color: $primaryColor;
+    transition: $transition;
 }
 
 .logo {
@@ -117,8 +118,9 @@
 }
 
 .project__description {
-    background-color: $primaryColor; // <--------- convertir a variable
+    background-color: $primaryColor;
     min-height: 100px;
+    transition: $transition;
 }
 
 .project__description-text {
@@ -127,9 +129,10 @@
 }
 
 .project__technologies {
-    background-color: $primaryLight; // <--------- convertir a variable
+    background-color: $primaryLight;
     min-height: 50px;
     max-height: 50px;
+    transition: $transition;
 }
 
 .technology {
@@ -138,7 +141,8 @@
     line-height: $line-h50px;
 
     &:not(:last-child) {
-        border-right: 1px solid $primaryDark; // <--------- convertir a variable
+        border-right: 1px solid $primaryDark;
+        transition: $transition;
     }
 }
 
@@ -152,6 +156,7 @@
     height: 15rem;
     border-radius: 50%;
     background: linear-gradient(0deg, $primaryColor 50%, rgba($primaryColor, .5) 50%);
+    transition: $transition;
 }
 
 .skill__progress, .skill__technology {
@@ -165,9 +170,10 @@
 }
 
 .skill__technology {
-    background: linear-gradient(transparent 50%, white 50%); // <----- convertir a variable
+    background: linear-gradient(transparent 50%, white 50%);
     transform: scale(1.1);
     z-index: 1;
+    transition: $transition;
 }
 
 .skill__technology-text {
@@ -179,6 +185,7 @@
     padding: 1rem;
     box-sizing: border-box;
     background: white content-box;
+    transition: $transition;
 }
 
 .skill__progress-text {

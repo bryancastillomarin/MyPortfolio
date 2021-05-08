@@ -1,0 +1,42 @@
+body.dark {
+    color: white;
+    background-color: $darkColorPrimary;
+
+    & a {
+        color: white;
+    }
+
+    & .header__container {
+        background-color: $darkColorDark;
+    }
+
+    & .project__description {
+        background-color: $darkColorLight;
+    }
+
+    & .project__technologies {
+        background-color: $darkColorLight;
+    }
+
+    & .technology {
+        &:not(:last-child) {
+            border-right: 1px solid $darkColorPrimary;
+        }
+    }
+
+    & .skill {
+        background: linear-gradient(0deg, $darkColorDark 50%, rgba($darkColorLight, .5) 50%);
+    }
+
+    & .skill__technology {
+        background: linear-gradient(transparent 50%, $darkColorPrimary 50%);
+    }
+
+    & .skill__progress {
+        background: $darkColorPrimary content-box;
+    }
+
+    & .footer {
+        background-color: $darkColorDark;
+    }
+}

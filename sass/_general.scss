@@ -2,9 +2,14 @@ html, body {
     font-family: 'Crimson Text', serif;
 }
 
+body {
+    transition: $transition;
+}
+
 a {
     text-decoration: none;
     color: black;
+    transition: $transition;
 }
 
 .flex {
