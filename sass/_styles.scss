@@ -2,6 +2,7 @@
 .header__container {
     height: 75px;
     padding-top: 10px;
+    background-color: $primaryColor;
 }
 
 .logo {
@@ -28,7 +29,7 @@
     }
 }
 
-// ---------- MAIN ---------- //}
+// ---------- MAIN ---------- //
 
 .main__container {
     margin-top: $margin20px;
@@ -44,9 +45,9 @@
 }
 
 .title {
-    font-size: $font32px; // <--------- convertir a variable
+    font-size: $font32px;
     text-align: center;
-    margin-bottom: $margin32px; // <------- convertir a variable
+    margin-bottom: $margin32px;
 }
 
 // ---------- ABOUTME ---------- //
@@ -65,18 +66,18 @@
 }
 
 .aboutme__description-text {
-    margin: $margin32px auto; // <--------- convertir a variable
+    margin: $margin32px auto;
     max-width: 1000px;
     text-align: justify;
-    font-size: $font24px; // <--------- convertir a variable
-    line-height: $line-h32px; // <--------- convertir a variable
+    font-size: $font24px;
+    line-height: $line-h32px;
     
 }
 
 // ---------- MY PROJECTS ---------- //
 
 .project {
-    margin: 0 $margin20px; // <--------- convertir a variable
+    margin: 0 $margin20px;
     flex-basis: 100%; // <-------------small view
     border-radius: 10px;
     overflow: hidden;
@@ -88,7 +89,7 @@
 
     &::before {
         text-align: center;
-        font-size: $font18px; // <------- convertir a variable
+        font-size: $font18px;
         color: white;
 
         font-family: 'Font Awesome\ 5 Free';
@@ -116,17 +117,17 @@
 }
 
 .project__description {
-    background-color: #DDD; // <--------- convertir a variable
+    background-color: $primaryColor; // <--------- convertir a variable
     min-height: 100px;
 }
 
 .project__description-text {
-    font-size: $font18px; // <--------- convertir a variable
+    font-size: $font18px;
     text-align: center;
 }
 
 .project__technologies {
-    background-color: #DDD; // <--------- convertir a variable
+    background-color: $primaryLight; // <--------- convertir a variable
     min-height: 50px;
     max-height: 50px;
 }
@@ -137,20 +138,20 @@
     line-height: $line-h50px;
 
     &:not(:last-child) {
-        border-right: 1px solid #CCC; // <--------- convertir a variable
+        border-right: 1px solid $primaryDark; // <--------- convertir a variable
     }
 }
 
 // ---------- MY SKILLS ---------- //
 
 .skill {
-    margin: 0 auto $margin12px auto; // <------------ convertir a variable
+    margin: 0 auto $margin12px auto;
     position: relative;
 
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    background: linear-gradient(0deg, black 50%, rgba(#000, .5) 50%);
+    background: linear-gradient(0deg, $primaryColor 50%, rgba($primaryColor, .5) 50%);
 }
 
 .skill__progress, .skill__technology {
@@ -170,37 +171,45 @@
 }
 
 .skill__technology-text {
-    line-height: $line-h160px; // <-------- convertir a variable
+    line-height: $line-h160px;
     text-transform: uppercase;
 }
 
 .skill__progress {
     padding: 1rem;
     box-sizing: border-box;
-    background: white content-box; // <-------- convertir a variable
+    background: white content-box;
 }
 
 .skill__progress-text {
-    line-height: $line-h160px; // <-------- convertir a variable
+    line-height: $line-h160px;
 }
 
 // ---------- CONTACT ---------- //
 
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $primaryColor;
+}
+
 .social, .copyright {
-    margin: $margin20px auto; // <-------- convertir a variable
+    margin: $margin20px auto;
+    margin-bottom: 0;
     width: 80%;
     max-width: 800px;
 }
 
 .copyright-text {
-    font-size: $font20px; // <--------- convertir a variable
-    line-height: $line-h32px; // <--------- convertir a variable
+    font-size: $font20px;
+    line-height: $line-h32px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 // ---------- FONT AWESOME ICONS ---------- //
 .social__icon {
-    font-size: $fontawesomeicons; // <----------- cambiar a variable
+    font-size: $fontawesomeicons;
 }
 
 .fa-envelope {
@@ -225,9 +234,10 @@
 // ---------- DARK MODE ICON ---------- //
 .darkmode {
     position: fixed;
+    z-index: 10;
     bottom: 15px;
     right: 15px;
-    font-size: $darkmodeicon; // <---------- cambiar a variable
+    font-size: $darkmodeicon;
     cursor: pointer;
 }
 
