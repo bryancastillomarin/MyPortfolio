@@ -21,7 +21,7 @@
 }
 
 .language {
-    font-size: 1.125rem;
+    font-size: $font18px;
 }
 
 .language:hover {
@@ -31,22 +31,22 @@
 // ---------- MAIN ---------- //}
 
 .main__container {
-    margin-top: 20px;
+    margin-top: $margin20px;
 }
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 40px; /////// vista pequeña
+    padding: 0 $smallWrapper; /////// vista pequeña
 }
 
 .section {
-    margin-top: 20px;
+    margin-top: $margin20px;
 }
 
 .title {
-    font-size: 2rem; // <--------- convertir a variable
+    font-size: $font32px; // <--------- convertir a variable
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: $margin32px; // <------- convertir a variable
 }
 
 // ---------- ABOUTME ---------- //
@@ -65,18 +65,18 @@
 }
 
 .aboutme__description-text {
-    margin: 2rem auto;
+    margin: $margin32px auto; // <--------- convertir a variable
     max-width: 1000px;
     text-align: justify;
-    font-size: 1.5rem; // <--------- convertir a variable
-    line-height: 2rem;
+    font-size: $font24px; // <--------- convertir a variable
+    line-height: $line-h32px; // <--------- convertir a variable
     
 }
 
 // ---------- MY PROJECTS ---------- //
 
 .project {
-    margin: 0 20px;
+    margin: 0 $margin20px; // <--------- convertir a variable
     flex-basis: 100%; // <-------------small view
     border-radius: 10px;
     overflow: hidden;
@@ -89,7 +89,7 @@
 
 .project__image::before {
     text-align: center;
-    font-size: 1.125rem; // <------- convertir a variable
+    font-size: $font18px; // <------- convertir a variable
     color: white;
 
     font-family: 'Font Awesome\ 5 Free';
@@ -121,7 +121,7 @@
 }
 
 .project__description-text {
-    font-size: 1.125rem; // <--------- convertir a variable
+    font-size: $font18px; // <--------- convertir a variable
     text-align: center;
 }
 
@@ -134,7 +134,7 @@
 .technology {
     flex-basis: 33.33%;
     text-align: center;
-    line-height: 45px;
+    line-height: $line-h50px;
 }
 
 .technology:not(:last-child) {
@@ -144,7 +144,7 @@
 // ---------- MY SKILLS ---------- //
 
 .skill {
-    margin: 0 auto .75rem auto;
+    margin: 0 auto $margin12px auto; // <------------ convertir a variable
     position: relative;
 
     width: 15rem;
@@ -170,39 +170,39 @@
 }
 
 .skill__technology-text {
-    line-height: 10rem;
+    line-height: $line-h160px; // <-------- convertir a variable
     text-transform: uppercase;
 }
 
 .skill__progress {
     padding: 1rem;
-    line-height: 10rem;
     box-sizing: border-box;
     background: white content-box; // <-------- convertir a variable
 }
 
 .skill__progress-text {
-    line-height: 10rem;
+    line-height: $line-h160px; // <-------- convertir a variable
 }
 
 // ---------- CONTACT ---------- //
 
 .social, .copyright {
-    margin: 20px auto;
+    margin: $margin20px auto; // <-------- convertir a variable
     width: 80%;
     max-width: 800px;
 }
 
 .copyright-text {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: $font20px; // <--------- convertir a variable
+    line-height: $line-h32px; // <--------- convertir a variable
     text-align: center;
 }
 
-.social__icon {
-    font-size: 2.5rem; // <----------- cambiar a variable
-}
 // ---------- FONT AWESOME ICONS ---------- //
+.social__icon {
+    font-size: $fontawesomeicons; // <----------- cambiar a variable
+}
+
 .fa-envelope {
     color: #F6C800;
 }
@@ -227,7 +227,7 @@
     position: fixed;
     bottom: 15px;
     right: 15px;
-    font-size: 3rem; // <---------- cambiar a variable
+    font-size: $darkmodeicon; // <---------- cambiar a variable
     cursor: pointer;
 }
 
@@ -246,5 +246,3 @@
 .fa-cloud-sun:hover {
     color: #f6b400;
 }
-
-//font size aboutme; header padding; main container, section and project margins; skill margin; margin and line height footer
