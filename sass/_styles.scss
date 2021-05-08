@@ -91,7 +91,7 @@
     font-family: 'Font Awesome\ 5 Free';
     content: "\f002 Visit";
     font-weight: 900;
-
+ 
     position: absolute;
     top: 100%;
     left: 0;
@@ -137,9 +137,7 @@
     border-right: 1px solid #CCC; // <--------- convertir a variable
 }
 
-
-
-////////////////////////////////////////////////////////////////////////
+// ---------- MY SKILLS ---------- //
 
 .skill {
     margin: 0 auto 2rem auto;
@@ -162,8 +160,8 @@
 }
 
 .skill__technology {
-    background: linear-gradient(transparent 50%, white 50%);
-    transform: scale(1.2);
+    background: linear-gradient(transparent 50%, white 50%); // <----- convertir a variable
+    transform: scale(1.1);
     z-index: 1;
 }
 
@@ -176,6 +174,70 @@
     padding: 1rem;
     line-height: 10rem;
     box-sizing: border-box;
-    background: white content-box;
+    background: white content-box; // <-------- convertir a variable
 }
 
+.skill__progress-text {
+    line-height: 10rem;
+}
+
+// ---------- CONTACT ---------- //
+
+.social, .copyright {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.copyright-text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.social__icon {
+    font-size: 2.5rem; // <----------- cambiar a variable
+}
+// ---------- FONT AWESOME ICONS ---------- //
+.fa-envelope {
+    color: #F6C800;
+}
+
+.fa-facebook-square {
+    color: #4064AC;
+}
+
+.fa-instagram-square {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+    color: #0073B1;
+}
+
+// ---------- DARK MODE ICON ---------- //
+.darkmode {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 3rem; // <---------- cambiar a variable
+    cursor: pointer;
+}
+
+.fa-cloud-moon {
+    color: #f6b400;
+}
+
+.fa-cloud-moon:hover {
+    color: #0042f6;
+}
+
+.fa-cloud-sun {
+    color: #0042f6;
+}
+
+.fa-cloud-sun:hover {
+    color: #f6b400;
+}

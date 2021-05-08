@@ -19,6 +19,7 @@
 
     <!--Scripts-->
     <script src="/js/progress_bar.js"></script>
+    <script src="js/darkmode.js"></script>
 </head>
 <body>
     <header class="header">
@@ -135,34 +136,33 @@
         <div class="title">
             <span class="title-text">CONTACT ME</span>
         </div>
-        <div class="footer__container">    
-            <div class="social">
-                <div class="social__icon">
-                    <a href="#" class="social__icon-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#" class="social__icon-link">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="#" class="social__icon-link">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                    <a href="#" class="social__icon-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social__icon-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
+        <div class="footer__container">
+            <div class="social flex flex-ai-c flex-jc-se">
+                <a href="#" class="social__icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="social__icon">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#" class="social__icon">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="#" class="social__icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social__icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p class="copyright-text">Technologies used in this project: HTML5, SASS, Vanilla Javascript, PHP, MySQL</p>
+                <p class="copyright-text">Bryan Castillo Marín &copy; 2021</p>
             </div>
         </div>
-        <div class="copyright">
-            <p class="copyright-text">Technologies used in this project: HTML5, SASS, Vanilla Javascript, PHP, MySQL</p>
-            <p class="copyright-text">Bryan Castillo Marín &copy; 2021</p>
-        </div>
-        <span class="darkmode">
-            <i class="fas fa-cloud-moon"></i> 
-        </span>
     </footer>
+    <span class="darkmode">
+        <i class="fas fa-cloud-moon"></i>
+        <i class="fas fa-cloud-sun hidden"></i>
+    </span>
 </body>
 </html>
