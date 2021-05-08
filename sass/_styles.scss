@@ -1,11 +1,7 @@
 // ---------- HEADER ---------- //
-
-.header {
-    width: 100%;
-}
-
 .header__container {
     height: 75px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -24,6 +20,10 @@
     max-width: 150px;
 }
 
+.language {
+    font-size: 1.125rem;
+}
+
 .language:hover {
     text-decoration: underline;
 }
@@ -31,7 +31,7 @@
 // ---------- MAIN ---------- //}
 
 .main__container {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .wrapper {
@@ -40,13 +40,13 @@
 }
 
 .section {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .title {
     font-size: 2rem; // <--------- convertir a variable
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 // ---------- ABOUTME ---------- //
@@ -65,14 +65,18 @@
 }
 
 .aboutme__description-text {
+    margin: 2rem auto;
+    max-width: 1000px;
     text-align: justify;
-    font-size: 1.125rem; // <--------- convertir a variable
+    font-size: 1.5rem; // <--------- convertir a variable
+    line-height: 2rem;
+    
 }
 
 // ---------- MY PROJECTS ---------- //
 
 .project {
-    margin: 20px 20px;
+    margin: 0 20px;
     flex-basis: 100%; // <-------------small view
     border-radius: 10px;
     overflow: hidden;
@@ -140,7 +144,7 @@
 // ---------- MY SKILLS ---------- //
 
 .skill {
-    margin: 0 auto 2rem auto;
+    margin: 0 auto .75rem auto;
     position: relative;
 
     width: 15rem;
@@ -184,13 +188,14 @@
 // ---------- CONTACT ---------- //
 
 .social, .copyright {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 80%;
     max-width: 800px;
 }
 
 .copyright-text {
     font-size: 1.2rem;
+    line-height: 2rem;
     text-align: center;
 }
 
@@ -241,3 +246,5 @@
 .fa-cloud-sun:hover {
     color: #f6b400;
 }
+
+//font size aboutme; header padding; main container, section and project margins; skill margin; margin and line height footer
