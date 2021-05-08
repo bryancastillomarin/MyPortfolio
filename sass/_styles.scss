@@ -22,10 +22,10 @@
 
 .language {
     font-size: $font18px;
-}
 
-.language:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 // ---------- MAIN ---------- //}
@@ -85,28 +85,28 @@
 .project__image {
     position: relative;
     overflow: hidden;
-}
 
-.project__image::before {
-    text-align: center;
-    font-size: $font18px; // <------- convertir a variable
-    color: white;
+    &::before {
+        text-align: center;
+        font-size: $font18px; // <------- convertir a variable
+        color: white;
 
-    font-family: 'Font Awesome\ 5 Free';
-    content: "\f002 Visit";
-    font-weight: 900;
- 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    transition: all 300ms;
-}
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f002 Visit";
+        font-weight: 900;
 
-.project__image:hover::before {
-    top: 90%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        transition: all 300ms;
+    }
+
+    &:hover::before {
+        top: 90%;
+    }
 }
 
 .project__image-img {
@@ -135,10 +135,10 @@
     flex-basis: 33.33%;
     text-align: center;
     line-height: $line-h50px;
-}
 
-.technology:not(:last-child) {
-    border-right: 1px solid #CCC; // <--------- convertir a variable
+    &:not(:last-child) {
+        border-right: 1px solid #CCC; // <--------- convertir a variable
+    }
 }
 
 // ---------- MY SKILLS ---------- //
@@ -232,17 +232,17 @@
 }
 
 .fa-cloud-moon {
-    color: #f6b400;
-}
-
-.fa-cloud-moon:hover {
     color: #0042f6;
+
+    &:hover {
+        color: #f6b400;
+    }
 }
 
 .fa-cloud-sun {
-    color: #0042f6;
-}
-
-.fa-cloud-sun:hover {
     color: #f6b400;
+    
+    &:hover {
+        color: #0042f6;
+    }
 }
