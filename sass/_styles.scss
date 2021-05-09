@@ -38,7 +38,7 @@
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 $smallWrapper; /////// vista pequeña
+    padding: 0 $wrapper;
 }
 
 .section {
@@ -78,10 +78,11 @@
 // ---------- MY PROJECTS ---------- //
 
 .project {
-    margin: 0 $margin20px;
-    flex-basis: 100%; // <-------------small view
+    margin: 0 $margin12px;
+    margin-bottom: $margin12px;
     border-radius: 10px;
     overflow: hidden;
+    max-width: 380px;
 }
 
 .project__image {
@@ -114,7 +115,8 @@
 .project__image-img {
     display: block;
     width: 100%;
-    min-height: 200px;
+    max-width: 380px;
+    max-height: 300px;
 }
 
 .project__description {
@@ -149,7 +151,8 @@
 // ---------- MY SKILLS ---------- //
 
 .skill {
-    margin: 0 auto $margin12px auto;
+    margin: $margin12px;
+    margin-top: 0;
     position: relative;
 
     width: 15rem;
