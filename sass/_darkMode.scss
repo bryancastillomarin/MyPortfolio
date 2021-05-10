@@ -6,6 +6,14 @@ body.dark {
         color: white;
     }
 
+    & .svg {
+        stroke: white;
+    }
+
+    & .svg-text {
+        fill: white;
+    }
+
     & .header__container {
         background-color: $darkColorDark;
     }

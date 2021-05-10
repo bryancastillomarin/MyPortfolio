@@ -17,6 +17,16 @@
     max-height: 75px;
 }
 
+.svg {
+    stroke: black;
+}
+
+.svg-text {
+    font-weight: bold;
+    font-family: serif;
+    stroke: none;
+}
+
 .languages {
     flex-basis: 15%;
     max-width: 150px;
