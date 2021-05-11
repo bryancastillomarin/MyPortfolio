@@ -43,7 +43,3 @@
         //appending skill to main parent (skills)
         skillsDOM.appendChild(skill);
     });
-
-    
-
-
