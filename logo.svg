@@ -1,0 +1,6 @@
+<svg width="75" height="75" viewbox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
+    <path d="M37.5 5 L70 70 L5 70 Z" fill="none" stroke-width="3" stroke="white"/>
+    <text x="29" y="53" font-size="17" fill="white">B</text>
+    <text x="38" y="53" font-size="17" fill="white">M</text>
+    <text x="12" y="70" font-size="80" fill="white">C</text>
+</svg>
