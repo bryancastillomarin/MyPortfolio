@@ -18,8 +18,13 @@
     <link rel="stylesheet" href="css/all.min.css">
 
     <!--Scripts-->
-    <script src="js/skills.js" type="module"></script>   
+    <!--scripts to inyect proyects-->
+    <script src="js/projects.js" type="module"></script>
+    <script src="js/projects-render.js" type="module" defer></script>
+    <!--Scripts to inyect skills-->
+    <script src="js/skills.js" type="module"></script>
     <script src="js/skills-render.js" type="module" defer></script>
+    <!--script for dark mode-->
     <script src="js/darkmode.js"></script>
 </head>
 <body>
@@ -64,60 +69,7 @@
                         <span class="title-text">MY PROJECTS</span>
                     </div>
                     <div class="projects flex flex-ai-c flex-jc-c flex-fw-w">
-                        <div class="project">
-                            <div class="project__image">
-                                <a href="#" class="project__image-link">
-                                    <img src="img/pokedex.png" class="project__image-img">
-                                </a>
-                            </div>
-                            <div class="project__description flex flex-ai-c flex-jc-c">
-                                <p class="project__description-text">
-                                    Simple application consuming pokeapi. It renders a pokemon's data without reloading page.
-                                </p>
-                            </div>
-                            <div class="project__technologies flex flex-jc-sa">
-                                <span class="technology">HTML</span>
-                                <span class="technology">CSS</span>
-                                <span class="technology">Javascript</span>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <div class="project__image">
-                                <a href="#" class="project__image-link">
-                                    <img src="img/calculator.png" class="project__image-img">
-                                </a>
-                            </div>
-                            <div class="project__description flex flex-ai-c flex-jc-c">
-                                <p class="project__description-text">
-                                    Simple application consuming pokeapi. It renders a pokemon's data without reloading page.
-                                </p>
-                            </div>
-                            <div class="project__technologies flex flex-jc-sa">
-                                <span class="technology">HTML</span>
-                                <span class="technology">CSS</span>
-                                <span class="technology">Javascript</span>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <div class="project__image">
-                                <a href="#" class="project__image-link">
-                                    <img src="img/rock-paper-scisors.png" class="project__image-img">
-                                </a>
-                            </div>
-                            <div class="project__description flex flex-ai-c flex-jc-c">
-                                <p class="project__description-text">
-                                    Simple application consuming pokeapi. It renders a pokemon's data without reloading page.
-                                </p>
-                            </div>
-                            <div class="project__technologies flex flex-jc-sa">
-                                <span class="technology">HTML</span>
-                                <span class="technology">CSS</span>
-                                <span class="technology">Javascript</span>
-                            </div>
-                        </div>
-
+                        <!--projects injected by projects-render.js-->
                     </div>
                 </section>
                 <section class="section myskills">
@@ -125,7 +77,7 @@
                         <span class="title-text">MY SKILLS</span>
                     </div>
                     <div class="skills flex flex-ai-c flex-jc-c flex-fw-w">
-                        <!--skills injected by progress-bar.js-->
+                        <!--skills injected by skills-render.js-->
                     </div>
                 </section>
 <!--            <section class="section myeducation">
