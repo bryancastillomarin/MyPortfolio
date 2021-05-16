@@ -1,4 +1,5 @@
 create database portfolio character set utf8 collate utf8_general_ci;
+set names utf8;
 
 use portfolio;
 
