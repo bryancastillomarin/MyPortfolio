@@ -84,7 +84,7 @@ use connection\Connection;
             }
         }
 
-        //returns view depending on language (English by default)
+        //returns view (sql views) depending on language (English by default)
         private function selectLANG($lang) {
             if($lang ==='es')
                 return 'SELECT * FROM projectsES';

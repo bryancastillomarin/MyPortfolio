@@ -1,6 +1,11 @@
 <?php
 
-    class Skill {
+namespace skill;
+
+require_once '../db/Connection.php';
+use connection\Connection;
+
+    class Skill extends Connection{
 
         //properties
         private $name;
@@ -42,8 +47,17 @@
         //CRUD
 
         //get all skills
-        public function getAll() {
-            //TODO
+        public static function getAll() {
+            $sql = 'SELECT * FROM skillsVIEW';
+            $result = self::connect()->query($sql);
+            $numRows = $result->num_rows;
+            if($numRows > 0) {
+                $data = array();
+                while($row = $result->fetch_assoc()) {
+                    $data[] = $row;
+                }
+                echo json_encode($data);
+            }
         }
     }
 ?>

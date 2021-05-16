@@ -32,6 +32,10 @@ select distinct(pt.id_project) as id, src_image as image, descripcion as descrip
 from projects_technologies as pt
 inner join projects as p on pt.id_project = p.id_project;
 
+create view skillsVIEW as
 select name, percent from skills;
+
+
 select * from projectsES;
 select * from projectsEN;
+select * from skillsVIEW;
