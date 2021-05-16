@@ -71,8 +71,8 @@ use connection\Connection;
         //CRUD
 
         //get all projects
-        public static function getAll() {
-            $sql = 'SELECT * FROM projectsES';
+        public static function getAll($lang) {
+            $sql = self::selectLANG($lang);
             $result = self::connect()->query($sql);
             $numRows = $result->num_rows;
             if($numRows > 0) {
@@ -82,6 +82,13 @@ use connection\Connection;
                 }
                 echo json_encode($data);
             }
+        }
+
+        //returns view depending on language (English by default)
+        private function selectLANG($lang) {
+            if($lang ==='es')
+                return 'SELECT * FROM projectsES';
+            return 'SELECT * FROM projectsEN';
         }
     }
 ?>

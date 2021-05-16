@@ -5,21 +5,9 @@
     use project\Project;
 
     /////////////////////////////////////////
-    $allProjects = Project::getAll();
-    //echo json_encode($allProjects);
-    //echo $allProjects;
+    //$method = $_SERVER['REQUEST_METHOD']; 
+    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 
-    //foreach($allProjects as $project) {
-    //    echo json_encode($project);
-            /*
-            $project['id'] ." --- ".
-            $project['image'] ." --- ".
-            $project['description'] ." --- ".
-            $project['technology1'] ." --- ".
-            $project['technology2'] ." --- ".
-            $project['technology3'] ."\n"
-            ;
-        */
-    //}
+    Project::getAll($lang);
 
 ?>
