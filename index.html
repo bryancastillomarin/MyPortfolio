@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
 
-    <!--font awesome for icons-->
+    <!--Font awesome for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
     <!--Styles-->
@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="css/all.min.css">
 
     <!--Scripts-->
-    <!--scripts to inyect proyects-->
-    <script src="js/projects.js" type="module"></script>
+    <!--Scripts to inject proyects-->
     <script src="js/projects-render.js" type="module" defer></script>
-    <!--Scripts to inyect skills-->
-    <script src="js/skills.js" type="module"></script>
+    <script src="js/projects-API.js" type="module" defer crossorigin="anonymous"></script>
+    <!--Scripts to inject skills-->
     <script src="js/skills-render.js" type="module" defer></script>
-    <!--script for dark mode-->
+    <script src="js/skills-API.js" type="module" defer crossorigin="anonymous"></script>
+    <!--Script for dark mode-->
     <script src="js/darkmode.js"></script>
 </head>
 <body>
@@ -71,7 +71,7 @@
                         <span class="title-text">MY PROJECTS</span>
                     </div>
                     <div class="projects flex flex-ai-c flex-jc-c flex-fw-w">
-                        <!--projects injected by projects-render.js-->
+                        <!--projects injected by projects-API.js-->
                     </div>
                 </section>
                 <section class="section myskills">
@@ -79,7 +79,7 @@
                         <span class="title-text">MY SKILLS</span>
                     </div>
                     <div class="skills flex flex-ai-c flex-jc-c flex-fw-w">
-                        <!--skills injected by skills-render.js-->
+                        <!--skills injected by skills-API.js-->
                     </div>
                 </section>
 <!--            <section class="section myeducation">
@@ -122,6 +122,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/testAPI.js"></script>
 </body>
 </html>

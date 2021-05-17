@@ -4,6 +4,7 @@ html, body {
 
 body {
     transition: $transition;
+    overflow-x: hidden; //because of rotations in skills section them generated horizontal scroll
 }
 
 a {
