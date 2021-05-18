@@ -23,7 +23,7 @@
 
 .svg-text {
     font-weight: bold;
-    font-family: serif;
+    //font-family: serif, 'Times New Roman', Georgia;
     stroke: none;
 }
 
@@ -124,10 +124,15 @@
 
 .project__image-img {
     display: block;
-    min-width: 380px;
+    //min-width: 380px;
+    width: 100%;
     min-height: 300px;
     max-width: 380px;
     max-height: 300px;
+
+    @media (max-width: 576px) {//extra small mobile device according to bootstrap
+        max-width: 100%;
+    }
 }
 
 .project__description {
@@ -171,6 +176,11 @@
     border-radius: 50%;
     background: linear-gradient(0deg, $primaryColor 50%, rgba($primaryColor, .5) 50%);
     transition: $transition;
+
+    @media (max-width: 576px) { //extra small mobile device according to bootstrap
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 .skill__progress, .skill__technology {
@@ -193,6 +203,9 @@
 .skill__technology-text {
     line-height: $line-h160px;
     text-transform: uppercase;
+    @media (max-width: 576px) { //extra small mobile device according to bootstrap
+        line-height: 100px;
+    }
 }
 
 .skill__progress {
@@ -204,6 +217,9 @@
 
 .skill__progress-text {
     line-height: $line-h160px;
+    @media (max-width: 576px) { //extra small mobile device according to bootstrap
+        line-height: 100px;
+    }
 }
 
 // ---------- CONTACT ---------- //
