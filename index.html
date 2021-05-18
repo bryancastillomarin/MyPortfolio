@@ -37,11 +37,11 @@
     <header class="header">
         <div class="header__container flex flex-ai-c flex-jc-sb">
             <div class="logo flex flex-jc-c">
-                <svg class="logo__img svg" viewbox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.5 5 L70 70 L5 70 Z" fill="none" stroke-width="3"/>
-                    <text class="svg-text" x="29" y="53" font-size="17">B</text>
-                    <text class="svg-text" x="38" y="53" font-size="17">M</text>
-                    <text class="svg-text" x="12" y="70" font-size="80">C</text>
+                <svg width="75" height="75" viewbox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 5 L70 70 L5 70 Z" fill="none" stroke-width="3" stroke="black" class="svg" />
+                    <text x="29" y="53" font-size="17" fill="black" class="svg-text">B</text>
+                    <text x="38" y="53" font-size="17" fill="black" class="svg-text">M</text>
+                    <text x="12" y="70" font-size="80" fill="black" class="svg-text">C</text>
                 </svg>
             </div>
             <div class="languages flex flex-jc-se">
@@ -62,13 +62,16 @@
                     </div>
                     <div class="aboutme__description">
                         <p class="aboutme__description-text">
-                            I'm a Computer Systems Engeneering & Frontend Developer. I consider myself to have good skills as a layout and responsive designer. Despite my passion for Frontend development, I have a solid Backend knowledge so I intend to be a Full Stack developer some day.
+                            I'm a Computer Systems Engeneering & Frontend Developer. I consider myself to have good skills as a layout and responsive designer. Despite my passion for Frontend development, I have a solid Backend knowledge so I intend to be a Full Stack developer someday.
                         </p>
                     </div>
                 </section>
                 <section class="section myprojects">
                     <div class="title">
                         <span class="title-text">MY PROJECTS</span>
+                    </div>
+                    <div class="subtitle">
+                        <span class="subtitle-text">Click an image to visit</span>
                     </div>
                     <div class="projects flex flex-ai-c flex-jc-c flex-fw-w">
                         <!--projects injected by projects-API.js-->
@@ -77,6 +80,9 @@
                 <section class="section myskills">
                     <div class="title">
                         <span class="title-text">MY SKILLS</span>
+                    </div>
+                    <div class="subtitle">
+                        <span class="subtitle-text">This is how do I grade my skills</span>
                     </div>
                     <div class="skills flex flex-ai-c flex-jc-c flex-fw-w">
                         <!--skills injected by skills-API.js-->

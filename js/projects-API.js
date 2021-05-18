@@ -2,6 +2,7 @@
 
 import { renderProjects } from './projects-render.js';
 
+//const url = 'http://192.168.0.20/MyPortfolio/api/v1/projects';
 const url = 'http://localhost/MyPortfolio/api/v1/projects';
 
 const consumeAPI = url => {

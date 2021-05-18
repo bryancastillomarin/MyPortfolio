@@ -23,7 +23,7 @@
 
 .svg-text {
     font-weight: bold;
-    //font-family: serif, 'Times New Roman', Georgia;
+    font-family: serif, 'Times New Roman', Georgia;
     stroke: none;
 }
 
@@ -59,6 +59,12 @@
     font-size: $font32px;
     text-align: center;
     margin-bottom: $margin32px;
+}
+
+.subtitle {
+    font-size: $font24px;
+    text-align: center;
+    margin-bottom: $margin20px;
 }
 
 // ---------- ABOUTME ---------- //
