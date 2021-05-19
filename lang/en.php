@@ -10,5 +10,5 @@
         'contact' => 'CONTACT ME',
         'footer' => 'Technologies used in this project: HTML5, SASS, Vanilla Javascript, PHP, MySQL',
     );
-
+    
 ?>

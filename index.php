@@ -1,5 +1,13 @@
 <?php
     require_once 'lang/lang.php';
+
+/*    if(isset($_POST['lang'])) {
+        $lang = $_POST['lang'];
+        require_once "lang/$lang.php";
+    } else {
+        require_once 'lang/en.php';
+    }
+*/
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +32,12 @@
     <link rel="stylesheet" href="css/all.min.css">
 
     <!--Scripts-->
+    <script defer>
+        //gettig language from PHP
+        const currentLang = "<?php echo $language; ?>" ? "<?php echo $language; ?>" : 'en';
+    </script>
+
+    <script src="js/languages.js"></script>
     <!--Scripts to inject proyects-->
     <script src="js/projects-render.js" type="module" defer></script>
     <script src="js/projects-API.js" type="module" defer crossorigin="anonymous"></script>
@@ -49,8 +63,8 @@
                 </svg>
             </div>
             <div class="languages flex flex-jc-se">
-                <a href="#" class="language">EN</a>
-                <a href="#" class="language">ES</a>
+                <a href="" class="language">en</a>
+                <a href="" class="language">es</a>
             </div>
         </div>
     </header>
