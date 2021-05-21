@@ -98,8 +98,8 @@
                 </svg>
             </div>
             <div class="languages flex flex-jc-se">
-                <a href="" class="language">en</a>
-                <a href="" class="language">es</a>
+                <a href="" class="language">EN</a>
+                <a href="" class="language">ES</a>
             </div>
         </div>
     </header>

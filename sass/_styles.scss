@@ -89,6 +89,8 @@
     border-radius: 10px;
     overflow: hidden;
     max-width: 380px;
+    
+    box-shadow: rgba($darkColorDark, 0.5) 3px -2px 2px 0px;
 }
 
 .project__image {
@@ -173,6 +175,8 @@
     background: linear-gradient(0deg, $primaryColor 50%, rgba($primaryColor, .5) 50%);
     transition: $transition;
 
+    
+
     @media (max-width: 576px) { //extra small mobile device according to bootstrap
         width: 10rem;
         height: 10rem;
@@ -209,6 +213,7 @@
     box-sizing: border-box;
     background: white content-box;
     transition: $transition;
+    box-shadow: rgba($darkColorDark, 0.5) 3px -2px 2px 0px;
 }
 
 .skill__progress-text {
