@@ -159,7 +159,7 @@
         </div>
         <div class="footer__container">
             <div class="social flex flex-ai-c flex-jc-se">
-                <a href="#" class="social__icon">
+                <a href="contact" class="social__icon">
                     <i class="fas fa-envelope"></i>
                 </a>
                 <a href="https://www.facebook.com/bryan.castillomarin/" target="_blank" class="social__icon">

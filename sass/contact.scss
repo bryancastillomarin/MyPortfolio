@@ -1,0 +1,142 @@
+body {
+    background-color: #1188B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.image-img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+    height: auto;
+}
+
+// ---------- FORM ---------- //
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-title {
+    font-size: 1.8rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+
+.form-input {    
+    padding: .5rem;
+    background-color: #CCC;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+
+    &:focus {
+        outline: none;
+        border: 2px solid #1188B6;
+    }
+
+    &.error {
+        border: 2px solid red;
+    }
+}
+
+.textarea {
+    resize: none;
+}
+
+.form-error {
+    color: red;
+}
+
+.form-submit {
+    width: 100%;
+    padding: .5rem;
+    background-color: #1188B6;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+// ---------- SOCIAL ICONS ---------- //
+
+.social {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.icon {
+    text-decoration: none;
+    color: #222;
+    font-size: 2.5rem;
+}
+
+.social__icon {
+    margin: 0 5px;
+}
+
+.fa-facebook-square {
+    color: #4064AC;
+}
+
+.fa-instagram-square {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+    color: #0073B1;
+}
+
+// ---------- BACK BUTTON ---------- //
+
+.back-btn {
+    position: fixed;
+    bottom: 0;
+    font-size: 2rem;
+}
