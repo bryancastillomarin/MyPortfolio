@@ -29,7 +29,7 @@
             const projectImageImg = document.createElement('img');
             const projectDescriptionText = document.createElement('p');
 
-            const projectDescriptionTextNode = document.createTextNode(object.description);
+            //const projectDescriptionTextNode = document.createTextNode(object.description);
 
             //creating and adding spans for each technology in each project
             createSpanTechnology(object.technology1, projectTechnologies);
@@ -57,7 +57,7 @@
             projectImageLink.appendChild(projectImageImg);
             projectImage.appendChild(projectImageLink);
 
-            projectDescriptionText.appendChild(projectDescriptionTextNode);
+            //projectDescriptionText.appendChild(projectDescriptionTextNode);
             projectDescription.appendChild(projectDescriptionText);
 
             project.appendChild(projectImage);

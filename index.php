@@ -1,15 +1,3 @@
-<?php
-    require_once 'lang/lang.php';
-
-/*    if(isset($_POST['lang'])) {
-        $lang = $_POST['lang'];
-        require_once "lang/$lang.php";
-    } else {
-        require_once 'lang/en.php';
-    }
-*/
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,13 +19,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
 
-    <!--Scripts-->
-    <script defer>
-        //gettig language from PHP
-        const currentLang = "<?php echo $language; ?>" ? "<?php echo $language; ?>" : 'en';
-    </script>
-
-    <script src="js/languages.js"></script>
     <!--Scripts to inject proyects-->
     <script src="js/projects-render.js" type="module" defer></script>
     <script src="js/projects-API.js" type="module" defer crossorigin="anonymous"></script>
@@ -45,6 +26,7 @@
     <script src="js/skills-render.js" type="module" defer></script>
     <script src="js/skills-API.js" type="module" defer crossorigin="anonymous"></script>
     <!--Script for dark mode-->
+    <script src="js/languages.js" type="module" defer></script>
     <script src="js/darkmode.js"></script>
 </head>
 <body>
@@ -108,23 +90,23 @@
             <div class="wrapper">
                 <section class="section aboutme">
                     <div class="title">
-                        <span class="title-text"><?=$lang['aboutme']?></span> <!-- -- Cambiar --  -->
+                        <span class="title-text"></span> <!-- -- Cambiar --  -->
                     </div>
                     <div class="aboutme__photo">
                         <img src="img/photo.jpg" alt="photo" title="photo" class="aboutme__photo-img">
                     </div>
                     <div class="aboutme__description">
                         <p class="aboutme__description-text">
-<!-- -- Cambiar --  -->     <?=$lang['description']?>
+                            <!-- -- Cambiar --  -->     
                         </p>
                     </div>
                 </section>
                 <section class="section myprojects">
                     <div class="title">
-                        <span class="title-text"><?=$lang['projects']?></span> <!-- -- Cambiar --  -->
+                        <span class="title-text"></span> <!-- -- Cambiar --  -->
                     </div>
                     <div class="subtitle">
-                        <span class="subtitle-text"><?=$lang['projects-desc']?></span> <!-- -- Cambiar --  -->
+                        <span class="subtitle-text"></span> <!-- -- Cambiar --  -->
                     </div>
                     <div class="projects flex flex-ai-c flex-jc-c flex-fw-w">
                         <!--projects injected by projects-API.js-->
@@ -132,10 +114,10 @@
                 </section>
                 <section class="section myskills">
                     <div class="title">
-                        <span class="title-text"><?=$lang['skills']?></span> <!-- -- Cambiar --  -->
+                        <span class="title-text"></span> <!-- -- Cambiar --  -->
                     </div>
                     <div class="subtitle">
-                        <span class="subtitle-text"><?=$lang['skills-desc']?></span> <!-- -- Cambiar --  -->
+                        <span class="subtitle-text"></span> <!-- -- Cambiar --  -->
                     </div>
                     <div class="skills flex flex-ai-c flex-jc-c flex-fw-w">
                         <!--skills injected by skills-API.js-->
@@ -155,7 +137,7 @@
     </main>
     <footer class="footer">
         <div class="title">
-            <span class="title-text"><?=$lang['contact']?></span> <!-- -- Cambiar --  -->
+            <span class="title-text"></span> <!-- -- Cambiar --  -->
         </div>
         <div class="footer__container">
             <div class="social flex flex-ai-c flex-jc-se">
@@ -176,7 +158,7 @@
                 </a>
             </div>
             <div class="copyright">
-<!-- -- Cambiar --  -->     <p class="copyright-text"><?=$lang['footer']?></p>
+                <p class="copyright-text"></p> <!-- -- Cambiar --  -->
                 <p class="copyright-text">Bryan Castillo Marín &copy; 2021</p>
             </div>
         </div>

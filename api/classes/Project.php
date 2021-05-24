@@ -84,11 +84,31 @@ use connection\Connection;
             }
         }
 
+        //get all descriptions
+        public static function getDescriptions($lang) {
+            $sql = self::selectDescriptions($lang);
+            $result = self::connect()->query($sql);
+            $numRows = $result->num_rows;
+            if($numRows > 0) {
+                $data = array();
+                while($row = $result->fetch_assoc()) {
+                    $data[] = $row;
+                }
+                echo json_encode($data);
+            }
+        }
+
         //returns view (sql views) depending on language (English by default)
         private function selectLANG($lang) {
             if($lang ==='es')
                 return 'SELECT * FROM projectsES';
             return 'SELECT * FROM projectsEN';
+        }
+
+        private function selectDescriptions($lang) {
+            if($lang === 'es')
+                return 'SELECT id_project, descripcion as description FROM projects';
+            return 'SELECT id_project, description FROM projects';
         }
     }
 ?>
