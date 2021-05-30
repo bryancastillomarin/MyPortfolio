@@ -10,10 +10,10 @@
                 require_once $file;
             }
         }catch (Exception $e) {
-            require_once "en.php"; //english by default
+            require_once "en.php"; //english by default, language doesn't exist (file not found)
         }
     } else {
-        require_once "en.php"; //english by default
+        require_once "en.php"; //english by default, no request has been sent yet
     }
 
     echo json_encode($lang, JSON_UNESCAPED_UNICODE);
